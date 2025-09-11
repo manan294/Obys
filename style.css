@@ -1194,28 +1194,36 @@ width: fit-content;
 
 @media (max-width: 600px) {
   /* Global fixes */
+  html, body {
+    overflow-x: hidden; /* 🚫 Prevent side scrolling */
+  }
+
   * {
     font-size: 80%;
+    box-sizing: border-box;
   }
 
   #page1 #nav {
-    padding: 6vw 3vw;
+    padding: 6vw 4vw;
     flex-direction: column;
-    gap: 4vw;
+    gap: 5vw;
+    width: 100%;
   }
 
   #nav-part2 {
     gap: 6vw;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   #nav-part2 h4 {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 
   /* Hero section */
   .hero {
     width: 100%;
-    margin-left: 0;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -1223,29 +1231,29 @@ width: fit-content;
 
   .hero h1,
   .hero h2 {
-    font-size: 13vw;
+    font-size: 12vw;
     line-height: 13vw;
-    text-align: center;
   }
 
   #hero1::before {
-    font-size: 7vw;
+    font-size: 6vw;
     left: 0;
-    top: -15%;
+    top: -20%;
   }
 
   /* Video container */
   #video-container {
     width: 100%;
     left: 0;
-    height: 35vh;
+    height: 30vh;
+    margin: 0 auto;
   }
 
   #video-container #video-cursor {
     height: 18vw;
     width: 18vw;
     top: -25%;
-    left: 60%;
+    left: 70%;
   }
 
   #video-container i {
@@ -1255,55 +1263,58 @@ width: fit-content;
   /* Page3 */
   #page3-content {
     width: 100%;
-    margin-left: 0;
+    margin: 0 auto;
+    text-align: center;
   }
 
   #page3 h1 {
-    font-size: 13vw;
+    font-size: 12vw;
   }
 
   #page3 h1::before {
-    font-size: 7vw;
+    font-size: 6vw;
     left: 0;
-    top: -60%;
+    top: -55%;
   }
 
   #image-divcontainer {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .image-div {
-    width: 95vw;
-    height: 70vw;
-    margin-bottom: 6vh;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5vh;
   }
 
   .page3-circle1,
   .page3-circle2 {
-    width: 70vw;
-    height: 70vw;
-    margin: 6vh auto;
+    width: 65vw;
+    height: 65vw;
+    margin: 5vh auto;
   }
 
   /* Page4 */
   #page4-content {
     width: 100%;
-    margin-left: 0;
+    margin: 0 auto;
+    text-align: center;
   }
 
   #page4-content h1 {
-    font-size: 13vw;
+    font-size: 12vw;
   }
 
   #page4-content > p {
     font-size: 5vw;
     width: 100%;
-    text-align: center;
   }
 
   #page4-img {
     flex-direction: column;
+    width: 100%;
   }
 
   #page4-img img {
@@ -1314,83 +1325,78 @@ width: fit-content;
   #page4txt p {
     font-size: 3.5vw;
     width: 100%;
-    margin-left: 0;
-    text-align: center;
+    margin: 0 auto;
   }
 
   #page4blue {
-    width: 95vw;
+    width: 95%;
     margin: 5vh auto;
   }
 
   .blueelem h4 {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 
   .blueelem p {
-    font-size: 3vw;
-    width: 80%;
+    font-size: 3.5vw;
+    width: 85%;
     margin: 0 auto;
   }
 
   /* ✅ Responsive fix for #abttxt::before */
   #abttxt::before {
-    font-size: 7vw;
+    font-size: 6vw;
     left: 0;
-    top: -65%;
+    top: -60%;
   }
 
   /* Page5 */
   #wetxt {
-    left: 0;
+    width: 100%;
     font-size: 5vw;
     text-align: center;
-    width: 100%;
+    left: 0;
   }
 
   .elem h1,
   .elem2 h1 {
-    font-size: 14vw;
+    font-size: 13vw;
   }
 
   /* Footer */
   #footer {
     width: 100%;
-    margin-left: 0;
+    margin: 0 auto;
+    text-align: center;
   }
 
   #footer h1 {
-    font-size: 14vw;
+    font-size: 13vw;
     height: auto;
-    text-align: center;
   }
 
   #footdiv {
     flex-direction: column;
-    gap: 1vh;
+    gap: 3vh;
     align-items: center;
     text-align: center;
+    width: 100%;
   }
 
   #footdiv .box h5 {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 
   #footdiv .box h6 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .foottxt h5 {
-    font-size: 3vw;
-    margin-bottom: 4vh;
+    font-size: 3.5vw;
   }
 
   #infotxt {
     width: 100%;
     text-align: center;
-  }
-
-  #cursor{
-    display: none;
   }
 }
