@@ -1005,7 +1005,7 @@ width: fit-content;
   }
 
  html, body {
-    overflow-x: hidden; /* 🚫 Prevent side scrolling */
+    overflow-x: hidden; 
   }
 
   #page1 #nav {
@@ -1140,7 +1140,7 @@ width: fit-content;
     width: 70%;
   }
 
-  /* ✅ Responsive fix for #abttxt::before */
+
   #abttxt::before {
     font-size: 6vw;
     left: 0;
@@ -1208,14 +1208,14 @@ width: fit-content;
   }
 
   #page1 #nav {
-    padding: 6vw 4vw;
+    padding: 5vw 3vw; /* reduced */
     flex-direction: column;
-    gap: 5vw;
+    gap: 3.5vw; /* reduced */
     width: 100%;
   }
 
   #nav-part2 {
-    gap: 6vw;
+    gap: 3.5vw; /* reduced */
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -1237,6 +1237,7 @@ width: fit-content;
   .hero h2 {
     font-size: 12vw;
     line-height: 13vw;
+    margin-bottom: 2vh; /* reduced */
   }
 
   #hero1::before {
@@ -1249,19 +1250,19 @@ width: fit-content;
   #video-container {
     width: 100%;
     left: 0;
-    height: 30vh;
-    margin: 0 auto;
+    height: 28vh; /* reduced */
+    margin: 1.5vh auto; /* reduced */
   }
 
   #video-container #video-cursor {
-    height: 18vw;
-    width: 18vw;
-    top: -25%;
-    left: 70%;
+    height: 16vw; /* reduced */
+    width: 16vw;  /* reduced */
+    top: -20%;
+    left: 65%;
   }
 
   #video-container i {
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
 
   /* Page3 */
@@ -1273,12 +1274,13 @@ width: fit-content;
 
   #page3 h1 {
     font-size: 12vw;
+    margin-bottom: 2vh; /* reduced */
   }
 
   #page3 h1::before {
     font-size: 6vw;
     left: 0;
-    top: -55%;
+    top: -50%; /* adjusted */
   }
 
   #image-divcontainer {
@@ -1290,14 +1292,14 @@ width: fit-content;
   .image-div {
     width: 100%;
     height: auto;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh; /* reduced */
   }
 
   .page3-circle1,
   .page3-circle2 {
-    width: 65vw;
-    height: 65vw;
-    margin: 5vh auto;
+    width: 60vw;  /* reduced */
+    height: 60vw; /* reduced */
+    margin: 3.5vh auto; /* reduced */
   }
 
   /* Page4 */
@@ -1309,11 +1311,13 @@ width: fit-content;
 
   #page4-content h1 {
     font-size: 12vw;
+    margin-bottom: 2vh; /* reduced */
   }
 
   #page4-content > p {
-    font-size: 5vw;
+    font-size: 4.5vw; /* reduced */
     width: 100%;
+    margin-bottom: 2vh; /* reduced */
   }
 
   #page4-img {
@@ -1323,48 +1327,50 @@ width: fit-content;
 
   #page4-img img {
     width: 100%;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh; /* reduced */
   }
 
   #page4txt p {
-    font-size: 3.5vw;
+    font-size: 3.2vw; /* reduced */
     width: 100%;
-    margin: 0 auto;
+    margin: 1.5vh auto; /* reduced */
   }
 
   #page4blue {
-    width: 95%;
-    margin: 5vh auto;
+    width: 92%; /* slightly reduced */
+    margin: 3.5vh auto; /* reduced */
   }
 
   .blueelem h4 {
-    font-size: 4.5vw;
+    font-size: 4vw; /* reduced */
   }
 
   .blueelem p {
-    font-size: 3.5vw;
-    width: 85%;
+    font-size: 3vw;
+    width: 80%;
     margin: 0 auto;
   }
 
   /* ✅ Responsive fix for #abttxt::before */
   #abttxt::before {
-    font-size: 6vw;
+    font-size: 5.5vw; /* reduced */
     left: 0;
-    top: -60%;
+    top: -55%; /* adjusted */
   }
 
   /* Page5 */
   #wetxt {
     width: 100%;
-    font-size: 5vw;
+    font-size: 4.5vw; /* reduced */
     text-align: center;
     left: 0;
+    margin-bottom: 2vh; /* reduced */
   }
 
   .elem h1,
   .elem2 h1 {
-    font-size: 13vw;
+    font-size: 12vw; /* reduced */
+    margin-bottom: 2vh; /* reduced */
   }
 
   /* Footer */
@@ -1375,28 +1381,29 @@ width: fit-content;
   }
 
   #footer h1 {
-    font-size: 13vw;
+    font-size: 12.5vw; /* slightly reduced */
     height: auto;
+    margin-bottom: 2vh; /* reduced */
   }
 
   #footdiv {
     flex-direction: column;
-    gap: 3vh;
+    gap: 2vh; /* reduced */
     align-items: center;
     text-align: center;
     width: 100%;
   }
 
   #footdiv .box h5 {
-    font-size: 4.5vw;
+    font-size: 4vw; /* reduced */
   }
 
   #footdiv .box h6 {
-    font-size: 3.5vw;
+    font-size: 3vw; /* reduced */
   }
 
   .foottxt h5 {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   #infotxt {
