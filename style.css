@@ -1004,6 +1004,10 @@ width: fit-content;
     font-size: 85%;
   }
 
+ html, body {
+    overflow-x: hidden; /* 🚫 Prevent side scrolling */
+  }
+
   #page1 #nav {
     padding: 5vw 4vw;
     flex-direction: column;
