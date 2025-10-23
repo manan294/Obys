@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 9999;
+  z-index: 99998;
   background-color: #030303;
   padding: 25vh 10vw;
 }
